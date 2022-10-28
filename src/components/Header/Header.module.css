@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px;
+}
+.nav {
+  display: flex;
+  /* background-color: green; */
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+}
+.search {
+  border: none;
+  cursor: pointer;
+}
+.myImage {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
