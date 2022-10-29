@@ -1,1 +1,24 @@
-
+.wrapper {
+  display: flex;
+  justify-content:space-between;
+  gap: 10px;
+}
+.sidebar {
+  width: 15%;
+  background-color: gray;
+  height: 100vh;
+}
+.contents {
+  width: 85%;
+  /* background-color: green; */
+  height: 100vh;
+  border-radius: 10px;
+}
+.parent-content{
+  /* background-color:green; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  gap: 5px; 
+}

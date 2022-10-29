@@ -1,0 +1,39 @@
+.LeftTopContent {
+  background-color: white;
+  border-radius: 10px;
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  position: relative;
+}
+.image {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 3px;
+}
+.child {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.prof {
+  background-color: rgb(173, 234, 173);
+  width: 65px;
+  align-items: center;
+  height: 25px;
+  position: absolute;
+  left: 200px;
+  top: 35px;
+  color: rgb(18, 88, 18);
+  border-radius: 5px;
+}
+.child > p {
+  color: grey;
+}
+.profActive {
+  background-color: rgb(255, 152, 152);
+  color: rgb(134, 58, 58);
+}
