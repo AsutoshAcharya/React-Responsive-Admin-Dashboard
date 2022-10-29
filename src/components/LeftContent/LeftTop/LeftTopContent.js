@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./LeftTopContent.css";
 
 function LeftTopContent(props) {
@@ -13,7 +12,7 @@ function LeftTopContent(props) {
           {props.data1.head} <br />
           {props.data1.price}
         </p>
-        {props.data1.profLoss.includes("-")?<div className={`prof profActive`}>{props.data1.profLoss}</div>:<div className={`prof `}>{props.data1.profLoss}</div>}
+        <div className={`prof ${props.data1.profLoss.includes('-')?"profActive":""}`}>{props.data1.profLoss}</div>
       </div>
     </div>
   );
