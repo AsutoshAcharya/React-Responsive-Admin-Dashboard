@@ -6,10 +6,11 @@
   justify-content: center;
   gap: 13px;
   position: relative;
+  min-width: 250px;
 }
 .image {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   position: absolute;
   top: 20px;
   left: 3px;
@@ -22,16 +23,18 @@
 .prof {
   background-color: rgb(173, 234, 173);
   width: 65px;
+  display: flex;
   align-items: center;
+  justify-content: center;
   height: 25px;
-  position: absolute;
-  left: 200px;
-  top: 35px;
+  margin-top: 35px;
+
   color: rgb(18, 88, 18);
   border-radius: 5px;
 }
 .child > p {
   color: grey;
+  margin-left: 10px;
 }
 .profActive {
   background-color: rgb(255, 152, 152);
