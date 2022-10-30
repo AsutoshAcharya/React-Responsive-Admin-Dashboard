@@ -22,3 +22,9 @@
   padding: 5px;
   gap: 5px; 
 }
+/* @media (max-width:768px) {
+  .parent-content{
+    display: grid;
+    grid-template-columns: 1;
+  }
+} */

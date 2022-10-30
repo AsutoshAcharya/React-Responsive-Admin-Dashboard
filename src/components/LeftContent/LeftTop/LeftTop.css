@@ -7,6 +7,6 @@
 
 @media (max-width:768px) {
     .LeftTop{
-        display: grid;
+        flex-direction: column;
     }
 }
