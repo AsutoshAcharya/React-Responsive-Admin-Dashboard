@@ -4,7 +4,7 @@
   width: 99%;
   justify-content: space-around;
   height: 20rem;
-  margin-top: 10px;
+  gap: 13px;
 }
 .childs {
   background-color: white;
@@ -29,8 +29,6 @@
 .stats {
   display: flex;
   flex-direction: column;
-  
-  
 }
 .orders {
   display: flex;
@@ -47,15 +45,21 @@
   margin-top: 15px;
   margin-right: 10px;
 }
-.completed{
-    display: flex;
-    /* background:linear-gradient(to bottom,red,rgb(224, 185, 185)); */
-    justify-content: space-around;
-    /* color: grey; */
-    font-size: small;
+.completed {
+  display: flex;
+  /* background:linear-gradient(to bottom,red,rgb(224, 185, 185)); */
+  justify-content: space-around;
+  /* color: grey; */
+  font-size: small;
 }
-.donut{
-    width: 100px;
-    height: 100px;
-    
+.donut {
+  width: 100px;
+  height: 100px;
+}
+.months {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  width: 100%;
+  padding: 10px;
 }

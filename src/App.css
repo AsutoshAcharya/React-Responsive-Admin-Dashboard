@@ -12,7 +12,9 @@
   width: 85%;
   /* background-color: green; */
   height: 100vh;
-  border-radius: 10px;
+  border-radius: 15px;
+ 
+  background-color: rgb(232, 240, 254);
 }
 .parent-content{
   /* background-color:green; */

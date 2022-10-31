@@ -2,11 +2,16 @@ import React from "react";
 import "./LeftBottom.css";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Doughnut } from "react-chartjs-2";
+// import {Chart} from 'react-chartjs-2';
+import CircleIcon from "@mui/icons-material/Circle";
 import TopProducts from "./TopProducts";
 import img1 from "../../../assets/#1.jpg";
 import img2 from "../../../assets/#2.jpg";
 import img3 from "../../../assets/#3.jpg";
+import areachart1 from "../../../assets/areaChart2.jpg";
+
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const data = {
@@ -55,7 +60,37 @@ function LeftBottom() {
   ];
   return (
     <div className="leftBottom">
-      <div className="childs">a</div>
+      <div className="childs">
+        <div className="top">
+          <div style={{ marginLeft: "10px" }}>User Activity</div>
+          <div>
+            <select name="opt" id="opt">
+              <option value="Monthly">Monthly</option>
+              <option value="Yearly">Yearly</option>
+              <option value="Weekly">Weekly</option>
+            </select>
+          </div>
+        </div>
+        <div className="months">
+          <div style={{ fontSize: "small" }}>
+            This Month <br />
+            <b>16,543</b>
+          </div>
+          <div style={{ marginTop: "20px", fontSize: "small" }}>
+            <CircleIcon sx={{ width: "15px", color: "blue" }} />{" "}
+            <sup>Current</sup>
+            <CircleIcon sx={{ width: "15px", color: "red" }} />{" "}
+            <sup>Previous</sup>
+          </div>
+        </div>
+        <div>
+          <img
+            src={areachart1}
+            alt=""
+            style={{ width: "100%", height: "130px" }}
+          />
+        </div>
+      </div>
 
       {/*-----------------------------------------------------------*/}
       <div className="childs stats">
@@ -77,12 +112,12 @@ function LeftBottom() {
       {/*-----------------------------------------------------------*/}
       <div className="childs topProducts">
         <div className="top">
-          <div>Top Products</div>
+          <div style={{ marginLeft: "10px" }}>Top Products</div>
           <div>
             <select name="opt" id="opt">
-              <option value="">Monthly</option>
-              <option value="">Yearly</option>
-              <option value="">Weekly</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Yearly">Yearly</option>
+              <option value="Weekly">Weekly</option>
             </select>
           </div>
         </div>

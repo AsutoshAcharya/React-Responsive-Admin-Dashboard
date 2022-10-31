@@ -1,5 +1,6 @@
 import React from "react";
 import "./TopProducts.css";
+
 const TopProducts = (props) => {
   return (
     <div className="prods">
