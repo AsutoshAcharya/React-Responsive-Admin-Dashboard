@@ -1,5 +1,6 @@
 import React from "react";
 import "./LeftBottom.css";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import TopProducts from "./TopProducts";
 import img1 from "../../../assets/#1.jpg";
 import img2 from "../../../assets/#2.jpg";
@@ -31,7 +32,23 @@ function LeftBottom() {
   return (
     <div className="leftBottom">
       <div className="childs">a</div>
-      <div className="childs">b</div>
+
+      {/*-----------------------------------------------------------*/}
+      <div className="childs stats">
+        <div className="orders">
+          <p>Order Stats</p>
+          <div>
+            <MoreHorizIcon className="moreHorizIcon" />
+          </div>
+        </div>
+        <div>stats cirlce image or component</div>
+        <div className="completed">
+          <div>Completed</div>
+          <div>Pending</div>
+          <div>Cancel</div>
+        </div>
+      </div>
+      {/*-----------------------------------------------------------*/}
       <div className="childs topProducts">
         <div className="top">
           <div>Top Products</div>
@@ -45,7 +62,7 @@ function LeftBottom() {
         </div>
 
         {data.map((item) => {
-          return <TopProducts products={item} key={data.id} />;
+          return <TopProducts products={item} key={item.id} />;
         })}
       </div>
     </div>
