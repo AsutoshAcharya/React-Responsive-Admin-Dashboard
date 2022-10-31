@@ -1,0 +1,25 @@
+.prods {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  /* background-color: red; */
+}
+.prodImage {
+  width: 30px;
+  height: 30px;
+}
+.sales {
+  display: flex;
+  width: 85%;
+  /* background-color: green; */
+  justify-content: space-between;
+}
+.i {
+  color: grey;
+  font-size: 15px;
+}
+.sales > div > div,
+.sales:last-child {
+  font-weight: 700;
+}

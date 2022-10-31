@@ -1,0 +1,28 @@
+.leftBottom {
+  display: flex;
+  /* background-color: red; */
+  width: 99%;
+  justify-content: space-around;
+  height: 20rem;
+  margin-top: 10px;
+}
+.childs {
+  background-color: white;
+  width: 32%;
+  border-radius: 10px;
+}
+.topProducts {
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.top > div > select {
+  color: grey;
+  outline: none;
+  border: none;
+  background-color: white;
+}
