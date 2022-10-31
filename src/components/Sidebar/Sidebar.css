@@ -1,0 +1,36 @@
+.sidebar {
+  width: 15%;
+  background-color: rgb(1, 4, 34);
+  color: rgb(146, 140, 140);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-radius: 5px;
+  gap: 12px;
+}
+.sidebarContent {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.btn {
+  background-color: rgb(1, 4, 34);
+  cursor: pointer;
+  margin-top: 5px;
+}
+.sidebarContent > h3 {
+  margin-left: 5px;
+}
+.sidebar > ul {
+  list-style: none;
+  padding-left: 30px;
+}
+.sidebar > ul > li {
+  padding: 5px;
+  font-size: smaller;
+}
+.sidebarContent:hover,
+.sidebar > ul > li:hover {
+  color: white;
+  cursor: pointer;
+}
