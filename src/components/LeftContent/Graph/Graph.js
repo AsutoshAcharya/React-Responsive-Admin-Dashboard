@@ -1,7 +1,52 @@
 import React from "react";
 import "./Graph.css";
-import { ResponsiveContainer, BarChart, Bar } from "recharts";
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+} from "recharts";
+import { Legend } from "chart.js";
 const Graph = () => {
+  const data = [
+    {
+      name: "Feb",
+
+      sales: 2400,
+    },
+    {
+      name: "Mar",
+
+      sales: 1398,
+    },
+    {
+      name: "Apr",
+
+      sales: 9800,
+    },
+    {
+      name: "May",
+
+      sales: 3908,
+    },
+    {
+      name: "June",
+
+      sales: 4800,
+    },
+    {
+      name: "July",
+
+      sales: 3800,
+    },
+    {
+      name: "Aug",
+
+      sales: 4300,
+    },
+  ];
   return (
     <div className="graph">
       <div className="graphData">
@@ -68,9 +113,23 @@ const Graph = () => {
       </div>
 
       {/*---------------------------------------------*/}
+      <div className="sortby">
+        sort by:
+        <select name="" id="opt">
+          <option value="Weekly">Weekly</option>
+          <option value="Monthly">Monthly</option>
+          <option value="Yearly">Yearly</option>
+        </select>
+      </div>
+      <div>
+        <ResponsiveContainer width={600} height="100%">
+          <BarChart width={730} height={250} data={data}>
+            <XAxis dataKey="name" />
+            <YAxis />
 
-      <div className="displayGraph">
-        
+            <Bar dataKey="sales" fill="#8884d8" barSize={20} className="bar" />
+          </BarChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );

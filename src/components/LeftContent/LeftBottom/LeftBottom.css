@@ -20,11 +20,12 @@
   justify-content: space-between;
   margin-top: 5px;
 }
-.top > div > select {
+#opt {
   color: grey;
   outline: none;
   border: none;
   background-color: white;
+  z-index: 2;
 }
 .stats {
   display: flex;
@@ -63,4 +64,3 @@
   width: 100%;
   padding: 10px;
 }
-

@@ -4,6 +4,7 @@
   width: 98%;
   border-radius: 10px;
   justify-content: space-between;
+  position: relative;
 }
 .graphData {
   width: 30%;
@@ -33,4 +34,11 @@
 .graphData > div > span {
   margin-top: 0;
   color: grey;
+}
+.bar {
+  border-radius: 20px;
+}
+.sortby{
+    position: absolute;
+    left: 41rem;
 }
