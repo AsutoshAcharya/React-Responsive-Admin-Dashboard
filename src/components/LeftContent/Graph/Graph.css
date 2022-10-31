@@ -16,3 +16,21 @@
   width: 70%;
   padding: 5px;
 }
+.verticalLine {
+  background-color: rgb(194, 191, 191);
+  width: 1px;
+  height: 2rem;
+}
+.orderDetails {
+  font-size: small;
+  width: 40%;
+  color: grey;
+}
+.orderDetails > b {
+  color: black;
+  margin-top: 0;
+}
+.graphData > div > span {
+  margin-top: 0;
+  color: grey;
+}
