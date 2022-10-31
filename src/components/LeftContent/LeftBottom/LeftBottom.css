@@ -49,8 +49,13 @@
 }
 .completed{
     display: flex;
-    /* background-color: red; */
+    /* background:linear-gradient(to bottom,red,rgb(224, 185, 185)); */
     justify-content: space-around;
-    color: grey;
+    /* color: grey; */
     font-size: small;
+}
+.donut{
+    width: 100px;
+    height: 100px;
+    
 }
