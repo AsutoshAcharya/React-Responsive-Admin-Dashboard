@@ -6,12 +6,12 @@
   flex-direction: column;
   height: 100vh;
   border-radius: 5px;
-  gap: 12px;
+  gap: 6px;
 }
 .sidebarContent {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 15px;
 }
 .btn {
   background-color: rgb(1, 4, 34);
@@ -24,9 +24,10 @@
 .sidebar > ul {
   list-style: none;
   padding-left: 30px;
+  margin-top: 0;
 }
 .sidebar > ul > li {
-  padding: 5px;
+  padding: 2px;
   font-size: smaller;
 }
 .sidebarContent:hover,
@@ -34,3 +35,10 @@
   color: white;
   cursor: pointer;
 }
+/* .sidebarInfo{
+    
+} */
+.sidebarIcon{
+    vertical-align: middle;
+}
+

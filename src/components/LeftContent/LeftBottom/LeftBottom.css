@@ -10,6 +10,7 @@
   background-color: white;
   width: 32%;
   border-radius: 10px;
+  min-width: 250px;
 }
 .topProducts {
   display: flex;
@@ -63,4 +64,9 @@
   /* background-color: red; */
   width: 100%;
   padding: 10px;
+}
+@media (max-width: 768px) {
+  .leftBottom {
+    display: grid;
+  }
 }

@@ -30,3 +30,11 @@
     grid-template-columns: 1;
   }
 } */
+@media (max-width:768px) {
+  .wrapper{
+    display: grid;
+  }
+  .contents{
+    display: grid;
+  }
+}
